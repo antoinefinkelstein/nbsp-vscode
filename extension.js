@@ -30,16 +30,7 @@ var INVALID_INLINE_CHARS = [
   '\\xb1'  // modifier - under line
 ]
 
-var INVALID_TRAILING_CHARS = [
-  '\\x95',
-  '\\x99',
-  '\\xa0',
-  '\\xa8', // modifier - under curve
-  '\\xb1', // modifier - under line
-  '\\t',
-  '\\r',
-  ' '
-]
+var INVALID_TRAILING_CHARS = []
 
 exports.activate = function(context) {
   const whitespaceDecorationType = vscode.window.createTextEditorDecorationType({
